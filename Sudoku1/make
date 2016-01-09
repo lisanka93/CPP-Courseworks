@@ -1,0 +1,10 @@
+main: main.o sudoku.o
+	g++ -Wno-write-strings -g main.o sudoku.o -o main
+
+main.o: main.cpp sudoku.h
+	g++ -c -g main.cpp
+
+sudoku.o: sudoku.cpp sudoku.h
+	g++ -c -g sudoku.cpp
+
+

@@ -1,0 +1,18 @@
+﻿Lisa Chalaguine
+C++ LABWORK
+Question 5
+
+Before we start reallocating which one is “hard” and “very hard” one can see that all of them are hard because less than 25 numbers are given (usually given in newspaper sudokus). The “easy” one, for instance, has 26 given numbers.
+
+Mystery1 is the hardest (“very hard”) with a counter of 421547.
+That is because it has only 23 given numbers and four 3x3 grids with only two numbers given (in the easy sudoku only one 3x3 grid contains 2 numbers). This increases the number of possibilities for certain cell
+
+Mystery3 is easier (“hard”) because it has 24 numbers given which is one more than the very hard board which results in less possibilities of numbers that can be placed into a cell. So there will be less recursion function calls. (that again call more recursion calls) counter: 14134
+
+However, the recursion counter does not represent the difficulty in real life (at least not proportionally!). It just shows that if someone is just “trying out numbers” without any logical approach/tactic while solving the sudoku, it will  take longer to solve Mysery1 because there are more options available in total**
+
+Mystery2 is unsolvable. At some point there is no way to avoid putting an existing number (in row/column/3x3grid) into the cell which is not allowed in sudoku. (two 5s in first collumn and two 3s in second collumn)
+
+**Extra Note:
+The “medium” board has actually a higher counter than the “hard” one. I have not tried solving this sudoku myself but I assume that the difficulty labels were created by people's opinions and not a program counter. This proves that the counter doesnt match people's opinion on the difficulty levels. 
+
