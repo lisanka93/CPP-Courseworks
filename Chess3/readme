@@ -1,14 +1,25 @@
 a few comments to my code
-1. for inserting stuff into the map I used the C++11 standard because its just much faster to type and looks nicer. I have edited my makefile accordingly
+1. for inserting stuff into the map I used the C++11 standard because its just much faster to type and looks nicer. 
+   I have edited my makefile accordingly
 
-2. I did not make certain piece specific move patterns private for that class but put it all into the Piece class. In my opinion it doesnt make a difference since OOP is all about independent classes to make it easy to add new stuff. So if someone would ever want to reinvent chess and add a new piece with a new movepattern it could just add it into the parent (virtual) piece class. Maybe this piece will also inherit a move pattern from another piece, like moving in L-shape. then its actually better to store everything in the Piece class and keep the other child classes as simple as possible.
+2. I did not make certain piece specific move patterns private for that class but put it all into the Piece class. 
+   In my opinion it doesnt make a difference since OOP is all about independent classes to make it easy to add new stuff. 
+   So if someone would ever want to reinvent chess and add a new piece with a new movepattern it could just add it into the 
+   parent (virtual) piece class. Maybe this piece will also inherit a move pattern from another piece, like moving in L-shape. 
+   then its actually better to store everything in the Piece class and keep the other child classes as simple as possible.
 
-3. I know that my submitmove function is very long and tedious but it makes it easier to understand (for me at least) what is happening, than splitting it into many smaller functions and jumping back and forth to understand what its actually doing.
+3. I know that my submitmove function is very long and tedious but it makes it easier to understand (for me at least) what is 
+   happening, than splitting it into many smaller functions and jumping back and forth to understand what its actually doing.
 
-4. I did not comment in each piece header what a valid move is for that particular piece, I assumed you will be familiar with the move patterns and will not have to outline one more time the rules of chess (I am Russian, there is a certain bias that we are good at chess, which - in my case- is true).
+4. I did not comment in each piece header what a valid move is for that particular piece, I assumed you will be familiar 
+   with the move patterns and will not have to outline one more time the rules of chess 
+   (I am Russian, there is a certain bias that we are good at chess, which - in my case- is true).
 
-5. I am aware of certain small flaws in my code but I couldnt think of a n efficient way to solve them that would outweight just leaving it as it is. I believe that noone cares where exactly the obstruction is, if there is one (I couldnt print it because otherwise it would print it in the kingisunderattack loop). the best way to do it would be to use unicode, but since it wasnt required, I did not bother. Also, I cannot print checkmate, since, because it was in check before it would print check, so I am just adding "mate". Since it works, I did not look into that too much, sorry! I think its even cuter that way.
+5. I am aware of certain small flaws in my code but I couldnt think of a n efficient way to solve them that would outweight 
+   just leaving it as it is. I believe that noone cares where exactly the obstruction is, if there is one (I couldnt print it 
+   because otherwise it would print it in the kingisunderattack loop). the best way to do it would be to use unicode, but 
+   since it wasnt required, I did not bother. Also, I cannot print checkmate, since, because it was in check before it would 
+   print check, so I am just adding "mate". Since it works, I did not look into that too much, sorry! I think its even cuter t
+   hat way.
 
-thanks for the assignment. It was much more fun than Enigma.
-Have a nice holidays
-Lisa xx
+
